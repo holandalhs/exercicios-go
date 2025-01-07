@@ -1,6 +1,6 @@
 /* Pedra, papel, tesoura Vamos jogar!
 Você tem que retornar qual jogador ganhou! Em caso de empate, retorne Draw!.
-
+https://www.codewars.com/kata/5672a98bdbdd995fad00000f
 Exemplos(Entrada1, Entrada2 --> Saída):
 
 "scissors", "paper" --> "Player 1 won!"
