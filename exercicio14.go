@@ -11,17 +11,27 @@ não pode ter partes vazias
 */
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	palavras := []string{"I", "wish", "I", "hadn't", "come"}
 	fmt.Println(len(palavras))
+	var palavrafinal string
 
 	for i := 1; i < len((palavras)); i++ {
 		//fmt.Println(palavras[:1]) //pega tudo antes da posição 1
 		//fmt.Println(palavras[1:]) //pega da posição 1 até o final
-		fmt.Println(palavras[:i])
-		fmt.Println(palavras[i:])
+		//fmt.Println(palavras[:i])
+		//fmt.Println(palavras[i:])
+		juncaopalavras := fmt.Sprintf("(%s, %s)", strings.Join(palavras[:i], " "), strings.Join(palavras[i:], " "))
+		//fmt.Println(juncaopalavras)
+
+		palavrafinal += juncaopalavras
 	}
+
+	fmt.Println(palavrafinal)
 
 }
